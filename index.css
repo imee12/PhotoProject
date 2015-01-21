@@ -44,8 +44,12 @@ body {
   font-size: 25px;
 }
 
-.menu, .albums {
+aside, .albums {
   display: inline-block;
+}
+
+.menu {
+  display: none;
 }
 
 .albums li {
@@ -64,9 +68,6 @@ img {
   display: none;
 }
 
-nav {
-  display: none;
-}
 
 .active {
   display: block;
