@@ -48,6 +48,9 @@ body {
   display: inline-block;
 }
 
+.albums li {
+  list-style-type: none;
+}
 img {
   width: 80px;
   height: 80px;
