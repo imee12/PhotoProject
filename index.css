@@ -52,3 +52,19 @@ img {
   width: 80px;
   height: 80px;
 }
+
+.img2, .img3 {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+.active {
+  display: block;
+}
