@@ -44,7 +44,7 @@ body {
 .Album1, .Album2, .Album3, .Album4, .Album5, .Album6 {
   display: inline-block;
   background-color: purple;
-  width: 100px;
+  width: 300px;
   height: 100px;
   font-size: 25px;
 }
@@ -55,7 +55,7 @@ aside, .albums {
 }
 
 .albums {
-  width: 800px;
+  width: 1000px;
 
 }
 
@@ -67,15 +67,20 @@ aside, .albums {
   list-style-type: none;
 }
 img {
-  width: 80px;
-  height: 80px;
+  width: 300px;
+  height: 380px;
+
 }
 
-.img21, .img31, .img22, .img32{
+.img21, .img31, .img22, .img32, .img23, .img33 {
+
+  display: none;
+}
+.img24, .img34, .img25, .img35, .img26, .img36 {
   display: none;
 }
 
-.img2, .img3 {
+.img22, .img23{
   display: none;
 }
 
