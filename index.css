@@ -47,3 +47,8 @@ body {
 .menu, .albums {
   display: inline-block;
 }
+
+img {
+  width: 80px;
+  height: 80px;
+}
