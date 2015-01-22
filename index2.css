@@ -1,0 +1,32 @@
+.activeNav {
+  display: none;
+}
+
+.active {
+  display: block;
+
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  width: 100px;
+}
+
+.img2, .img3 {
+  display: none;
+}
+
+.backbutton {
+  display: none;
+}
+
+section , aside {
+  display: inline-block;
+}
+
+article {
+  display: inline-block;
+}
