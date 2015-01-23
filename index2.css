@@ -3,7 +3,7 @@
 }
 
 .active {
-  display: block;
+  display: inline-block;
 
 }
 
@@ -20,18 +20,21 @@ body {
 }
 
 img {
-  width: 150px;
+  width: 100px;
   display: inline-block;
   margin: 10px;
+  padding: 10px;
 
 }
 
-.img1 {
+/*.img1 {
   display: inline-block;
-}
+}*/
 
 .img2, .img3 {
   display: none;
+
+
 }
 
 .backbutton {
@@ -52,11 +55,19 @@ article {
   padding: 5px;
   margin: 5px;
   vertical-align: top;
+  ;
 }
 
 
-article li {
+article a {
   display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin: 0px 0px 0px 15px;
+}
+article li {
+  list-style-type: none;
 }
 
 aside {
@@ -69,3 +80,8 @@ section {
   background-color: blue;
   margin: 0px 0px 0px 200px;
 }
+
+.big {
+   width: 500px;
+  height: 300px;
+ }

@@ -1,46 +1,65 @@
 $(document).ready(function() {
 
+  var $img1 = $('.img1');
+  var $img2 =$('.img2');
+  var $img3=$('.img3');
 
+ $("article").click(function (event) {
+   event.preventDefault();
 
-//  $("href").click(function (event) {
-  //  event.preventDefault();
+    var relatedClass = "." + $(this).attr('rel');  // .post1 or .post2 or .post3
 
-    //var relatedClass = "." + $(this).attr('rel');  // .post1 or .post2 or .post3
+  $(this).closest("article").siblings().addClass("hide");
+  $(this).css({"width": "99%"});
+   //$(this).closest("li").addClass("active");
+   $(this).find("img").css({"display": "inline-block"});
+   $(this).find("li").css({"display": "inline-block"})
+   //$(this).find("img").show();    THIS WORKS
 
-//    $(this).closest("li").siblings().removeClass("hide");
-//    $(this).closest("li").addClass("active");
 //    $(relatedClass).siblings().removeClass("active");
 //    $(relatedClass).addClass('active');
+    //console.log(relatedClass);
 
-//    console.log(relatedClass);
 
 
-//  });
 
-var $Album1 = $('.Album1');
-var $img1 = $('.img1');
-var $img21 =$('.img21');
-var $img31=$('.img31');
+ $img1.click(function (event) {
+   event.preventDefault();
+   $(this).addClass("big");
+   $(this).closest("li").siblings("li").addClass("hide");
+   $(this).closest("img").siblings("img").addClass("hide");
+   //$(this).parent().parent().siblings().css({"display": "none"});
+  // $(this).parent().hide();
 
-$Album1.click(function (event){
-  event.preventDefault();
+
+});
+
+
+
+
+
+
+});
+
+});
+
+//$Album1.click(function (event){
+//  event.preventDefault();
   //console.log(this);
   //  $(this).closest("img").children().addClass("active");
   //  $('.Album1').children().addClass("active");
-  $(this).closest("article").siblings().addClass("hide");
+//  $(this).closest("article").siblings().addClass("hide");
   //$(this).addClass("active");
   //$(this).parent().addClass("hide");
-  $(this).closest("a").siblings("a").addClass("hide");
+  //$(this).closest("a").siblings("a").addClass("hide");
   //$(this).next().addClass("active");
 
 
   //$(this).closest("img").children().("active");
   //$(this).children("img").addClass("active");
-  $(".activeNav").addClass("active");
+  //$(".activeNav").addClass("active");
 
 
 
 
-});
-
-});
+//});
