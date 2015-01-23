@@ -28,8 +28,10 @@ $Album1.click(function (event){
   //  $(this).closest("img").children().addClass("active");
   //  $('.Album1').children().addClass("active");
   $(this).closest("article").siblings().addClass("hide");
-  $(this).addClass("active");
+  //$(this).addClass("active");
   //$(this).parent().addClass("hide");
+  $(this).closest("a").siblings("a").addClass("hide");
+  //$(this).next().addClass("active");
 
 
   //$(this).closest("img").children().("active");
