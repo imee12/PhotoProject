@@ -3,6 +3,7 @@ $(document).ready(function() {
   var $img1 = $('.img1');
   var $img2 =$('.img2');
   var $img3=$('.img3');
+  var $backbutton = $(".backbutton");
 
  $("article").click(function (event) {
    event.preventDefault();
@@ -14,6 +15,7 @@ $(document).ready(function() {
    //$(this).closest("li").addClass("active");
    $(this).find("img").css({"display": "inline-block"});
    $(this).find("li").css({"display": "inline-block"})
+   $("aside").addClass("active");
    //$(this).find("img").show();    THIS WORKS
 
 //    $(relatedClass).siblings().removeClass("active");$("")
@@ -31,6 +33,9 @@ $(document).ready(function() {
    //$(this).parent().parent().siblings().css({"display": "none"});
   // $(this).parent().hide();
    $(this).parent().siblings().addClass("hide");
+   $(".backbutton").children().addClass("active");
+   $(".backbutton").addClass("active");
+
    //$(this).closest(".img2").css({"display": "none"});
    //$(".img3").css({"display": "none"});
    //$(".img3").addClass("hide");

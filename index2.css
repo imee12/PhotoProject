@@ -1,10 +1,12 @@
-.activeNav {
-  display: none;
+h1 {
+  text-align: center;
+  font-size: 45px;
 }
+
 
 .active {
   display: inline-block;
-
+  background-color: red;
 }
 
 /*.album1, .album2, .album3, .album4, .album5, .album6 {
@@ -39,6 +41,10 @@ img {
 
 .backbutton {
   display: none;
+  width: 150px;
+  background-color: purple;
+  font-size: 35px;
+  text-align: center;
 }
 
 section , aside {
@@ -71,6 +77,7 @@ article li {
 }
 
 aside {
+  display: none;
   width: 10%;
   background-color: red;
 }
