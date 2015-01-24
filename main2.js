@@ -33,15 +33,21 @@ $(document).ready(function() {
    //$(this).parent().parent().siblings().css({"display": "none"});
   // $(this).parent().hide();
    $(this).parent().siblings().addClass("hide");
-   $(".backbutton").children().addClass("active");
-   $(".backbutton").addClass("active");
+  $(".backbutton").css({"display": "block"});
+   //$(".backbutton").addClass("active");
 
    //$(this).closest(".img2").css({"display": "none"});
    //$(".img3").css({"display": "none"});
    //$(".img3").addClass("hide");
 });
 
+$(".backbutton").click(function(event) {
+  event.preventDefault();
+  $("img").removeClass("big");
+  $("a").removeClass("hide");
 
+
+});
 
 
 
