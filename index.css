@@ -90,9 +90,12 @@ img {
 
 
 .active {
-  display: block;
+  display: inline-block;
 }
 
+.img1, .img12, .img13{
+  display: inline-block;
+}
 
 .big {
   width: 500px;

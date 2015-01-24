@@ -16,22 +16,24 @@ $(document).ready(function() {
    $(this).find("li").css({"display": "inline-block"})
    //$(this).find("img").show();    THIS WORKS
 
-//    $(relatedClass).siblings().removeClass("active");
+//    $(relatedClass).siblings().removeClass("active");$("")
 //    $(relatedClass).addClass('active');
     //console.log(relatedClass);
 
 
 
 
- $img1.click(function (event) {
+ $("img").click(function (event) {
    event.preventDefault();
    $(this).addClass("big");
-   $(this).closest("li").siblings("li").addClass("hide");
-   $(this).closest("img").siblings("img").addClass("hide");
+   //$(this).closest("li").siblings("li").addClass("hide");
+   //$(this).closest("img").siblings("img").addClass("hide");
    //$(this).parent().parent().siblings().css({"display": "none"});
   // $(this).parent().hide();
-
-
+   $(this).parent().siblings().addClass("hide");
+   //$(this).closest(".img2").css({"display": "none"});
+   //$(".img3").css({"display": "none"});
+   //$(".img3").addClass("hide");
 });
 
 
