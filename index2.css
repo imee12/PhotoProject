@@ -15,7 +15,7 @@ h1 {
 
 .active {
   display: inline-block;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 /*.album1, .album2, .album3, .album4, .album5, .album6 {
@@ -31,7 +31,8 @@ body {
 }
 
 img {
-  width: 100px;
+  width: 180px;
+  height: 180px;
   display: inline-block;
   margin: 10px;
   padding: 10px;
@@ -50,10 +51,15 @@ img {
 
 .backbutton {
   display: none;
-  width: 150px;
-  background-color: purple;
+  width: 250px;
+  margin: 0px 0px 0px 150px;
+/*  background-color: purple;*/
   font-size: 35px;
   text-align: center;
+}
+
+.backbutton a {
+  text-decoration: none;
 }
 
 section , aside {
@@ -65,7 +71,7 @@ article {
   display: inline-block;
   width: 29%;
   height: 280px;
-  background-color: purple;
+  /*background-color: purple;*/
   font-size: 25px;
   padding: 5px;
   margin: 5px;
@@ -87,17 +93,34 @@ article li {
 
 aside {
   display: none;
-  width: 10%;
-  background-color: red;
+  width: 12%;
+  /*background-color: red;*/
 }
 
 section {
   width: 80%;
-  background-color: blue;
+  /*background-color: blue;*/
   margin: 0px 0px 0px 200px;
 }
 
 .big {
    width: 500px;
-  height: 300px;
+  height: 500px;
+  margin: 0px 0px 0px 150px;
  }
+
+nav a {
+  font-size: 25px;
+  text-decoration: none;
+  margin: 5px;
+  font-color: black;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+footer {
+  height: 450px;
+}
