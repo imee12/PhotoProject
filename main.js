@@ -53,6 +53,7 @@ $img1.click(function(event){
   //$(".img1").siblings().removeClass("active");
   $(".backbutton").addClass("active");
 
+
   //$(".img2").removeClass("active");
   //$(".img3").removeClass("active");
 //  $(".img2").addClass("hide");

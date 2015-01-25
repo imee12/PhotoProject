@@ -54,6 +54,33 @@ $(".backbutton").click(function(event) {
 
 });
 
+
+$("nav a").click(function (event) {
+  event.preventDefault();
+
+  console.log("this is href: ", $(this).attr("href"));
+
+  var relatedClass = "." + $(this).attr('rel');  // .post1 or .post2 or .post3
+  // changing activeNav class to my nav menu item
+  //$(this).children().css({"display": "inline-block"});
+  //$(this).closest("li").addClass("active");
+  $(relatedClass).siblings().css({"display": "none"});
+  $(relatedClass).show();
+  $(relatedClass).css({"width": "99%"})
+  $(relatedClass).find("img").css({"display": "inline-block"});
+  $(relatedClass).closest("img").css({"display": "inline-block"});
+
+  //$(relatedClass).siblings().removeClass("active");
+  //$(relatedClass).addClass('active');
+
+  console.log(relatedClass);
+
+
+
+
+});
+
+
 });
 
 //$Album1.click(function (event){
