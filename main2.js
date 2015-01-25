@@ -11,7 +11,8 @@ $(document).ready(function() {
     var relatedClass = "." + $(this).attr('rel');  // .post1 or .post2 or .post3
 
   $(this).closest("article").siblings().addClass("hide");
-  $(this).css({"width": "99%"});
+  $(this).css({"width": "99%", "font-size": "25px"});
+
    //$(this).closest("li").addClass("active");
    $(this).find("img").css({"display": "inline-block"});
    $(this).find("li").css({"display": "inline-block"})

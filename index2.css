@@ -43,10 +43,15 @@ img {
   display: inline-block;
 }*/
 
-.img2, .img3 {
+.img2, .img3 , .img4, .img5, .img6{
   display: none;
 
 
+}
+
+
+.img4, .img5, .img6 {
+  margin: 0px 0px 0px 70px;
 }
 
 .backbutton {
@@ -122,5 +127,5 @@ nav li {
 }
 
 footer {
-  height: 450px;
+  height: 550px;
 }
