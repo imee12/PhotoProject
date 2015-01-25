@@ -81,6 +81,13 @@ $("nav a").click(function (event) {
 });
 
 
+$(".album4").click(function(event){
+  $(this).find("audio").trigger('play');
+  ///prepend('<img id="theImg" src="theImg.png" />')
+});
+
+
+
 });
 
 //$Album1.click(function (event){
